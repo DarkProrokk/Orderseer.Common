@@ -1,8 +1,10 @@
-name: Publish Nuget Packages
+name: Publish Entities Nuget Packages
 
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'Entities/'
     
 jobs:
   build:
