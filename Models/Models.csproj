@@ -12,7 +12,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Entities\Entities.csproj" />
+      <PackageReference Include="Orderseer.Common.Entities" Version="1.0.0" />
     </ItemGroup>
+
 
 </Project>

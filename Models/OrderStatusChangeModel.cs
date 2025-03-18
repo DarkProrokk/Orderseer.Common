@@ -1,4 +1,4 @@
-using Orderseer.Common.Entities;
+using Entities;
 
 namespace Orderseer.Common.Models;
 
