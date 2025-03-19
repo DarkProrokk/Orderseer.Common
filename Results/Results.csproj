@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Orderseer.Common.Results</PackageId>
+        <Version>1.0.0</Version>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>DarkProrok</Authors>
+        <Description>This package has common results for the Orderseer project</Description>
+    </PropertyGroup>
+
+</Project>

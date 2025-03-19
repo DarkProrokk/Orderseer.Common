@@ -1,0 +1,25 @@
+name: Publish Results Nuget Packages
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'Results/**'
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.x
+    - name: Build
+      run: dotnet build Results/Results.csproj -c Release
+    - name: Pack nugets
+      run: dotnet pack Results/Results.csproj -c Release --no-build --output Entities/
+    - name: Push to NuGet
+      run: dotnet nuget push "Results/*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
