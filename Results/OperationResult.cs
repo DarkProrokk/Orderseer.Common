@@ -11,6 +11,7 @@ public class OperationResult
         Message = message;
     }
 
+    
     public static OperationResult Success() => new(true, "Operation complete successfully.");
     public static OperationResult Failure(string errorMessage) => new(false, errorMessage);
 }
