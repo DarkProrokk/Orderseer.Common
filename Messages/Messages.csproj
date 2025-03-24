@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageId>Orderseer.Common.KafkaMessages</PackageId>
-        <Version>1.0.6</Version>
+        <PackageId>Orderseer.Common.Messages</PackageId>
+        <Version>1.0.7</Version>
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
