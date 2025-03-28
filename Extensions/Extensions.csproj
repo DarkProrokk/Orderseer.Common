@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Orderseer.Common.Extensions</PackageId>
+        <Version>1.0.0</Version>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>DarkProrok</Authors>
+        <Description>This package has common extensions for the Orderseer project</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Orderseer.Common.Entities" Version="2.0.1" />
+      <PackageReference Include="Orderseer.Common.Models" Version="1.0.2" />
+    </ItemGroup>
+
+</Project>
